@@ -3,11 +3,11 @@ function toggleTheme() {
   if (body.classList.contains("theme-feminine")) {
     body.classList.remove("theme-feminine");
     body.classList.add("theme-masculine");
-    body.style.backgroundImage = 'url(../imgs/pipi.jpg)';
+    body.style.backgroundImage = 'url(imgs/pipi.jpg)';
   } else {
     body.classList.remove("theme-masculine");
     body.classList.add("theme-feminine");
-    body.style.backgroundImage = 'url(../imgs/flower-bg.jpg)';
+    body.style.backgroundImage = 'url(imgs/flower-bg.jpg)';
   }
 }
 
