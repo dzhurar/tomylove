@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luv u</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="theme-feminine">
+    <header class="header">
+      <div class="header-container">
+        <ul class="header-list">
+            <li class="header-item">
+                <a href="#" class="header-link current">Главная</a>
+              </li>
+          <li class="header-item">
+            <a href="#" class="header-link">Счётчики</a>
+          </li>
+          <li class="header-item">
+            <a href="#" class="header-link">Галерея</a>
+          </li>
+        </ul>
+        <button id="openModal" class="header-link">Залогиниться</button>
+      </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 id="heroQuote">Здесь будет находиться ваш текст десь будет находиться ваш текст</h1>
+            </div>
+        </section>
+        <section class="link-tree">
+            <div class="container">
+                <ul class="link-cards">
+                    <li class="link-card">
+                        <img class="link-card-img" src="./imgs/pint-icon.png" alt="pinterest">
+                        <a class="link-card-link" href="https://ru.pinterest.com/">Pinterest</a>
+                        <p class="link-card-desc">Пинчики картиночки</p>
+                    </li>
+                    <li class="link-card">
+                        <img class="link-card-img" src="./imgs/ai-icon.png" alt="openai">
+                        <a class="link-card-link" href="https://openai.com/">OpenAI</a>
+                        <p class="link-card-desc">Нейроночка</p>
+                    </li>
+                    <li class="link-card">
+                        <img class="link-card-img" src="./imgs/pt-icon.png" alt="pony">
+                        <a class="link-card-link" href="https://pony.town/">Pony Town</a>
+                        <p class="link-card-desc">ПАНЯШКИ :3</p>
+                    </li>
+                    <li class="link-card">
+                        <img class="link-card-img" src="./imgs/yt-icon.png" alt="youtube">
+                        <a class="link-card-link" href="https://www.youtube.com">YouTube</a>
+                        <p class="link-card-desc">Ютубчек</p>
+                    </li>
+                    <li class="link-card">
+                        <img class="link-card-img" src="./imgs/guitar-one.png" alt="amdm">
+                        <a class="link-card-link" href="https://amdm.ru/">Am/Dm</a>
+                        <p class="link-card-desc">Гитарка раз</p>
+                    </li>
+                    <li class="link-card">
+                        <img class="link-card-img" src="./imgs/guitar-two.png" alt="ultimate-guitar">
+                        <a class="link-card-link" href="https://www.ultimate-guitar.com/">Ultimate guitar</a>
+                        <p class="link-card-desc">Гитарка два</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <div id="registerModal">
+        <div class="modal-content">
+            <p>Log in</p>
+            <span id="closeModal">x</span>
+        </div>
+    </div>
+    <button onclick="toggleTheme()">🔄 Змінити тему</button>
+    <!-- <div class="box">
+      <button onclick="toggleTheme()">🔄 Змінити тему</button>
+      <ul class="test-list">
+        <li class="test-li-one">
+          <p class="test-p-one">I exist only for testing</p>
+          <button class="test-btn-one">Click me</button>
+        </li>
+        <li class="test-li-two">
+          <p class="test-p-two">I exist only for testing</p>
+          <button class="test-btn-one">Click me</button>
+        </li>
+      </ul>
+    </div> -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
