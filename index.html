@@ -39,32 +39,32 @@
                 <ul class="link-cards">
                     <li class="link-card">
                         <img class="link-card-img" src="./imgs/pint-icon.png" alt="pinterest">
-                        <a class="link-card-link" href="https://ru.pinterest.com/">Pinterest</a>
+                        <a target="_blank" class="link-card-link" href="https://ru.pinterest.com/">Pinterest</a>
                         <p class="link-card-desc">Пинчики картиночки</p>
                     </li>
                     <li class="link-card">
                         <img class="link-card-img" src="./imgs/ai-icon.png" alt="openai">
-                        <a class="link-card-link" href="https://openai.com/">OpenAI</a>
+                        <a target="_blank" class="link-card-link" href="https://openai.com/">OpenAI</a>
                         <p class="link-card-desc">Нейроночка</p>
                     </li>
                     <li class="link-card">
                         <img class="link-card-img" src="./imgs/pt-icon.png" alt="pony">
-                        <a class="link-card-link" href="https://pony.town/">Pony Town</a>
+                        <a target="_blank" class="link-card-link" href="https://pony.town/">Pony Town</a>
                         <p class="link-card-desc">ПАНЯШКИ :3</p>
                     </li>
                     <li class="link-card">
                         <img class="link-card-img" src="./imgs/yt-icon.png" alt="youtube">
-                        <a class="link-card-link" href="https://www.youtube.com">YouTube</a>
+                        <a target="_blank" class="link-card-link" href="https://www.youtube.com">YouTube</a>
                         <p class="link-card-desc">Ютубчек</p>
                     </li>
                     <li class="link-card">
                         <img class="link-card-img" src="./imgs/guitar-one.png" alt="amdm">
-                        <a class="link-card-link" href="https://amdm.ru/">Am/Dm</a>
+                        <a target="_blank" class="link-card-link" href="https://amdm.ru/">Am/Dm</a>
                         <p class="link-card-desc">Гитарка раз</p>
                     </li>
                     <li class="link-card">
                         <img class="link-card-img" src="./imgs/guitar-two.png" alt="ultimate-guitar">
-                        <a class="link-card-link" href="https://www.ultimate-guitar.com/">Ultimate guitar</a>
+                        <a target="_blank" class="link-card-link" href="https://www.ultimate-guitar.com/">Ultimate guitar</a>
                         <p class="link-card-desc">Гитарка два</p>
                     </li>
                 </ul>
@@ -73,8 +73,9 @@
     </main>
     <div id="registerModal">
         <div class="modal-content">
-            <p>Log in</p>
-            <span id="closeModal">x</span>
+            <p id="modalText">Впиши свой ник, он будет отображаться в некоторых элементах, а ещё в зависимости от него, будет меняться тема сайта.</p>
+            <input placeholder="Тыкать сюда&#10084" id="modalInput" type="text">
+            <button id="closeModal">Сохранить</button>
         </div>
     </div>
     <button onclick="toggleTheme()">🔄 Змінити тему</button>
