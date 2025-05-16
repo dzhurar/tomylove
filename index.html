@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="theme-feminine">
+  <body>
     <header class="header">
       <div class="header-container">
         <ul class="header-list">
             <li class="header-item">
-                <a href="#" class="header-link current">Главная</a>
+                <a href="index.html" class="header-link current">Главная</a>
               </li>
           <li class="header-item">
-            <a href="#" class="header-link">Счётчики</a>
+            <a href="counter.html" class="header-link">Счётчики</a>
           </li>
           <li class="header-item">
             <a href="#" class="header-link">Галерея</a>
@@ -31,7 +31,7 @@
     <main class="main">
         <section class="hero">
             <div class="container">
-                <h1 id="heroQuote">Здесь будет находиться ваш текст десь будет находиться ваш текст</h1>
+                <h1 class="hero-text">Одна из причин по которой я тебя люблю, это причина № <br> <span id="heroQuote"></span></h1>
             </div>
         </section>
         <section class="link-tree">
@@ -78,7 +78,6 @@
             <button id="closeModal">Сохранить</button>
         </div>
     </div>
-    <button onclick="toggleTheme()">🔄 Змінити тему</button>
     <!-- <div class="box">
       <button onclick="toggleTheme()">🔄 Змінити тему</button>
       <ul class="test-list">
@@ -93,6 +92,6 @@
       </ul>
     </div> -->
 
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

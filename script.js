@@ -1,18 +1,30 @@
-function toggleTheme() {
+import { reasons } from "./res/reasons.js";
+// theme
+document.addEventListener("DOMContentLoaded", () => {
+  const themes = ["theme-feminine", "theme-masculine"];
+  const theme = themes[Math.floor(Math.random() * themes.length)];
   const body = document.body;
-  if (body.classList.contains("theme-feminine")) {
-    body.classList.remove("theme-feminine");
-    body.classList.add("theme-masculine");
+  body.classList.add(`${theme}`);
+  if(body.classList.contains("theme-feminine")){
+    body.style.backgroundImage = "url(imgs/flower-bg.jpg)"
+  } else if(body.classList.contains("theme-masculine")){
     body.style.backgroundImage = "url(imgs/pipi.jpg)";
-  } else {
-    body.classList.remove("theme-masculine");
-    body.classList.add("theme-feminine");
-    body.style.backgroundImage = "url(imgs/flower-bg.jpg)";
   }
-}
+});
 
+// function toggleTheme() {
+//   const body = document.body;
+//   if (body.classList.contains("theme-feminine")) {
+//     body.classList.remove("theme-feminine");
+//     body.classList.add("theme-masculine");
+//     body.style.backgroundImage = "url(imgs/pipi.jpg)";
+//   } else {
+//     body.classList.remove("theme-masculine");
+//     body.classList.add("theme-feminine");
+//     body.style.backgroundImage = "url(imgs/flower-bg.jpg)";
+//   }
+// } //возможность соасть хууп
 const heroQuote = document.getElementById("heroQuote");
-
 // modal
 document.addEventListener("DOMContentLoaded", () => {
   let userData = JSON.parse(localStorage.getItem("userData")) || [];
@@ -36,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       openModalBtn.textContent = `${modalInput.value}`;
       modalText.textContent = `Ты успешно поменяла ник на - ${modalInput.value}`;
       const naming = modalInput.value;
-      localStorage.setItem('userData', JSON.stringify({naming}))
+      localStorage.setItem("userData", JSON.stringify({ naming }));
       modalInput.value = "";
       setTimeout(() => {
         modal.style.display = "none";
@@ -48,7 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "none";
     }
   };
-  openModalBtn.textContent = `${JSON.parse(localStorage.getItem('userData')).naming}`;
+  openModalBtn.textContent = `${
+    JSON.parse(localStorage.getItem("userData")).naming
+  }`;
 
   // const userName
+});
+document.addEventListener("DOMContentLoaded", () => {
+  heroQuote.textContent = `${
+    reasons[Math.floor(Math.random() * reasons.length)]
+  }`;
 });
