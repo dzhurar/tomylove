@@ -256,8 +256,7 @@ section{
 /* footer */
 .footer{
   border-top: 3px solid var(--accent-hover);
-  /* background-color: var(--bg-contrast); */
-  background-color: red;
+  background-color: var(--bg-contrast);
   padding-top: 15px;
   padding-bottom: 15px;
 }
