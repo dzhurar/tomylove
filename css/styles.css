@@ -255,8 +255,9 @@ section{
 }
 /* footer */
 .footer{
-  border-top: 5px solid var(--accent-hover);
-  background-color: var(--bg-contrast);
+  border-top: 3px solid var(--accent-hover);
+  /* background-color: var(--bg-contrast); */
+  background-color: red;
   padding-top: 15px;
   padding-bottom: 15px;
 }
