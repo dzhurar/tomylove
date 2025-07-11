@@ -253,3 +253,19 @@ section{
   color: var(--text-on-casual);
   font-size: 24px;
 }
+/* footer */
+.footer{
+  border-top: 5px solid var(--accent-hover);
+  background-color: var(--bg-contrast);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.copyright{
+  text-align: center;
+  color: var(--text-on-contrast);
+  font-weight: 700;
+}
+.author{
+  text-decoration: underline;
+  color: var(--text-on-contrast);
+}

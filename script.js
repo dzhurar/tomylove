@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const theme = themes[Math.floor(Math.random() * themes.length)];
   const body = document.body;
   body.classList.add(`${theme}`);
-  if(body.classList.contains("theme-feminine")){
-    body.style.backgroundImage = "url(imgs/flower-bg.jpg)"
-  } else if(body.classList.contains("theme-masculine")){
+  if (body.classList.contains("theme-feminine")) {
+    body.style.backgroundImage = "url(imgs/flower-bg.jpg)";
+  } else if (body.classList.contains("theme-masculine")) {
     body.style.backgroundImage = "url(imgs/pipi.jpg)";
   }
 });
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   openModalBtn.addEventListener("click", () => {
     modal.style.display = "flex";
-    modalText.textContent = `Впиши свой ник, он будет отображаться в некоторых элементах, а ещё в зависимости от него, будет меняться тема сайта.`;
+    modalText.textContent = `Впиши свой ник, он будет отображаться в некоторых элементах.`;
   });
   closeModalBtn.addEventListener("click", () => {
     if (modalInput.value.length < 2) {
@@ -62,12 +62,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   openModalBtn.textContent = `${
     JSON.parse(localStorage.getItem("userData")).naming
+    
   }`;
-
-  // const userName
+    document.querySelector('.forWho').textContent = `${JSON.parse(localStorage.getItem("userData")).naming}`;
 });
 document.addEventListener("DOMContentLoaded", () => {
   heroQuote.textContent = `${
     reasons[Math.floor(Math.random() * reasons.length)]
   }`;
+
 });

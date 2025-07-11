@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luv u</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -15,58 +24,69 @@
     <header class="header">
       <div class="header-container">
         <ul class="header-list">
-            <li class="header-item">
-                <a href="index.html" class="header-link">Главная</a>
-              </li>
           <li class="header-item">
-            <a href="counter.html" class="header-link current">Счётчики</a>
+            <a href="index.html" class="header-link">Главная</a>
           </li>
           <li class="header-item">
-            <a href="#" class="header-link">Галерея</a>
+            <a href="counter.html" class="header-link current">Счётчики</a>
           </li>
         </ul>
         <button id="openModal" class="header-link">Залогиниться</button>
       </div>
     </header>
     <main class="main">
-        <section class="counters">
-            <div class="container">
-                <ul class="counter-list">
-                    <li class="counter">
-                        <div class="counter-wrap">
-                            <h2 class="counter-text">Времени вместе:</h2>
-                            <span id="timeTogether" class="time">134:12:32:48</span>
-                        </div>
-                    </li>
-                    <li class="counter">
-                        <div class="counter-wrap">
-                            <h2 class="counter-text">До следующей годовщины:</h2>
-                            <span id="timeToAnniversary" class="time">134:12:32:48</span>
-                        </div>
-                    </li>
-                    <li class="counter small">
-                        <div class="counter-wrap">
-                            <h2 class="counter-text">День рождения Сашик</h2>
-                            <span id="timeToShura" class="time">102:02:20:44</span>
-                        </div>
-                    </li>
-                    <li class="counter small">
-                        <div class="counter-wrap">
-                            <h2 class="counter-text">День рождения Роман Джура</h2>
-                            <span id="timeToRoma" class="time">10:09:13:45</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <div id="registerModal">
-        <div class="modal-content">
-            <p id="modalText">Впиши свой ник, он будет отображаться в некоторых элементах</p>
-            <input placeholder="Тыкать сюда&#10084" id="modalInput" type="text">
-            <button id="closeModal">Сохранить</button>
+      <section class="counters">
+        <div class="container">
+          <ul class="counter-list">
+            <li class="counter">
+              <div class="counter-wrap">
+                <h2 class="counter-text">Времени вместе:</h2>
+                <span id="timeTogether" class="time">xx:xx:xx:xx</span>
+              </div>
+            </li>
+            <li class="counter">
+              <div class="counter-wrap">
+                <h2 class="counter-text">До следующей годовщины:</h2>
+                <span id="timeToAnniversary" class="time">xx:xx:xx:xx</span>
+              </div>
+            </li>
+            <li class="counter small">
+              <div class="counter-wrap">
+                <h2 class="counter-text">День рождения Сашик</h2>
+                <span id="timeToShura" class="time">xx:xx:xx:xx</span>
+              </div>
+            </li>
+            <li class="counter small">
+              <div class="counter-wrap">
+                <h2 class="counter-text">День рождения Роман Джура</h2>
+                <span id="timeToRoma" class="time">xx:xx:xx:xx</span>
+              </div>
+            </li>
+          </ul>
         </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          Powered by
+          <a target="_blank" href="https://github.com/dzhurar?tab=repositories" class="author"
+            >me</a
+          >
+          for <span class="forWho">Shura</span><a target="_blank" href="https://dzhurar.github.io/To-my-love/">♥</a>.
+        </p>
+      </div>
+    </footer>
+    <div id="registerModal">
+      <div class="modal-content">
+        <p id="modalText">
+          Впиши свой ник, он будет отображаться в некоторых элементах.
+        </p>
+        <input placeholder="Тыкать сюда♥" id="modalInput" type="text" />
+        <button id="closeModal">Сохранить</button>
+      </div>
     </div>
     <script type="module" src="./script.js"></script>
+    <script src="./js/counters.js"></script>
   </body>
 </html>
